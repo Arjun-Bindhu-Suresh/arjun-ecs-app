@@ -1,9 +1,10 @@
 from flask import Flask
+
 app = Flask(__name__)
 
 @app.route('/')
-def hello():
-    return "Hello from Arjun ECS Container." 
+def home():
+    return "Hello from Arjun ECS Container."
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app.run(host='0.0.0.0', port=5000)
