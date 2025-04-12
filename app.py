@@ -3,8 +3,8 @@ from flask import Flask
 app = Flask(__name__)
 
 @app.route('/')
-def home():
-    return "Hello from Arjun CI/CD Pipeline! 🚀"
+def hello():
+    return 'Hello from Arjun - Azure Container App behind App Gateway!'
 
-if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=5000)
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=5000)  # ✅ NOT 80 anymore
